@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Github, 
-  Linkedin, 
   Send, 
   CheckCircle2, 
   ExternalLink, 
@@ -13,6 +11,8 @@ import {
   MapPin,
   Mail
 } from 'lucide-react';
+import { Github, Linkedin } from './Icons';
+
 import BrandLogo from './BrandLogo';
 import { BRAND, FOOTER_LINKS } from '../../styles/tokens';
 

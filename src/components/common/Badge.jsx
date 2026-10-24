@@ -15,9 +15,9 @@ export default function Badge({
 
   const variantClasses = {
     crimson:
-      'bg-[#FCEBED] dark:bg-[#321D23] text-[#B91F35] dark:text-[#F05263] border border-[#B91F35]/20 dark:border-[#F05263]/30',
+      'bg-[#FBECEF] dark:bg-[#321D23] text-[#78132B] dark:text-[#F05263] border border-[#78132B]/20 dark:border-[#F05263]/30',
     neutral:
-      'bg-[#F1EFED] dark:bg-[#1D1D21] text-[#66656B] dark:text-[#B6B4BA] border border-[#E9E5E4] dark:border-[#343238]',
+      'bg-white dark:bg-[#1D1D21] text-[#525059] dark:text-[#B6B4BA] border border-[#EAE5E2] dark:border-[#343238] shadow-[0_1px_4px_rgba(0,0,0,0.02)]',
     success:
       'bg-emerald-50 dark:bg-emerald-950/40 text-[#16794B] dark:text-[#50C58B] border border-emerald-200 dark:border-emerald-800/40',
     warning:
@@ -25,17 +25,18 @@ export default function Badge({
     info:
       'bg-blue-50 dark:bg-blue-950/40 text-[#245CB5] dark:text-[#83B5FF] border border-blue-200 dark:border-blue-800/40',
     burgundy:
-      'bg-[#5B1020]/10 dark:bg-[#7E1D30]/20 text-[#8F182B] dark:text-[#F05263] border border-[#8F182B]/30',
+      'bg-[#480A18]/10 dark:bg-[#7E1D30]/20 text-[#78132B] dark:text-[#F05263] border border-[#78132B]/30',
   };
 
   const dotClasses = {
-    crimson: 'bg-[#B91F35] dark:bg-[#F05263]',
-    neutral: 'bg-[#85838A] dark:bg-[#929098]',
+    crimson: 'bg-[#78132B] dark:bg-[#F05263]',
+    neutral: 'bg-[#787680] dark:bg-[#929098]',
     success: 'bg-[#16794B] dark:bg-[#50C58B]',
     warning: 'bg-[#A76512] dark:bg-[#F2B84B]',
     info: 'bg-[#245CB5] dark:bg-[#83B5FF]',
-    burgundy: 'bg-[#8F182B] dark:bg-[#F05263]',
+    burgundy: 'bg-[#78132B] dark:bg-[#F05263]',
   };
+
 
   return (
     <span

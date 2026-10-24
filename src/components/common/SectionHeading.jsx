@@ -17,23 +17,23 @@ export default function SectionHeading({
         isCenter ? 'text-center mx-auto max-w-3xl' : 'max-w-3xl'
       } ${className}`}
     >
-      {/* Category Eyebrow / Monospace Tag */}
+      {/* Category Eyebrow / Pill Tag */}
       {tag && (
         <div
-          className={`inline-flex items-center gap-2 mb-3 text-xs font-mono tracking-wider uppercase text-[#B91F35] dark:text-[#F05263] font-semibold ${
-            isCenter ? 'justify-center' : ''
+          className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBECEF] dark:bg-[#321D23] border border-[#78132B]/15 dark:border-[#F05263]/25 mb-4 text-[11px] font-mono tracking-wider uppercase text-[#78132B] dark:text-[#F05263] font-semibold ${
+            isCenter ? 'mx-auto' : ''
           }`}
         >
-          <span className="w-2 h-[2px] bg-[#B91F35] dark:bg-[#F05263]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#78132B] dark:bg-[#F05263]" />
           <span>{tag}</span>
         </div>
       )}
 
       {/* Main Heading */}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#171719] dark:text-[#F6F5F3] font-['Manrope'] leading-tight">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#141416] dark:text-[#F6F5F3] font-serif-editorial leading-[1.15]">
         {title}{' '}
         {highlight && (
-          <span className="text-[#B91F35] dark:text-[#F05263]">
+          <span className="text-[#78132B] dark:text-[#F05263]">
             {highlight}
           </span>
         )}
@@ -41,10 +41,11 @@ export default function SectionHeading({
 
       {/* Description / Editorial Subtitle */}
       {description && (
-        <p className="mt-4 text-base sm:text-lg text-[#66656B] dark:text-[#B6B4BA] leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-[#525059] dark:text-[#B6B4BA] leading-relaxed">
           {description}
         </p>
       )}
+
 
       {/* Optional action/filter container */}
       {children && <div className="mt-6">{children}</div>}

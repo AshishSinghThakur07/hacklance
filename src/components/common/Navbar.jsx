@@ -51,17 +51,17 @@ export default function Navbar() {
   return (
     <>
       {/* Top Engineering Micro-Banner */}
-      <div className="bg-[#B91F35] dark:bg-[#7E1D30] text-white text-[11px] font-mono py-1.5 px-4 text-center tracking-wider border-b border-[#8F182B] dark:border-[#5B1020] relative z-50">
+      <div className="bg-[#78132B] dark:bg-[#480A18] text-white text-xs py-2 px-4 text-center tracking-wide border-b border-[#5B0D1F] relative z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-2">
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-          <span className="font-semibold">HACKLANCE WINTER HACKATHON 2026:</span>
-          <span className="hidden sm:inline opacity-90">Registrations are now open for all college developers.</span>
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+          <span className="font-medium">HACKLANCE Winter Hackathon 2026:</span>
+          <span className="hidden sm:inline opacity-90">Registrations are now open for all student developers.</span>
           <Link
             to="/events"
-            className="underline hover:opacity-100 font-semibold inline-flex items-center gap-0.5 ml-1 transition-opacity"
+            className="underline underline-offset-2 hover:opacity-100 font-semibold inline-flex items-center gap-0.5 ml-1 transition-opacity"
           >
-            <span>Register Now</span>
-            <ArrowUpRight className="w-3 h-3" />
+            <span>Register Free</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </Link>
         </div>
       </div>
@@ -70,8 +70,8 @@ export default function Navbar() {
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? 'glass-panel shadow-sm border-b border-[#E9E5E4] dark:border-[#343238]'
-            : 'bg-[#FAF9F6]/90 dark:bg-[#101012]/90 border-b border-transparent backdrop-blur-md'
+            ? 'bg-[#FAF8F5]/95 dark:bg-[#0F0F12]/95 backdrop-blur-md shadow-[0_2px_12px_rgba(0,0,0,0.03)] border-b border-[#EAE5E2] dark:border-[#2A2830]'
+            : 'bg-[#FAF8F5]/90 dark:bg-[#0F0F12]/90 border-b border-transparent backdrop-blur-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -87,10 +87,10 @@ export default function Navbar() {
                   to={link.path}
                   end={link.path === '/'}
                   className={({ isActive }) =>
-                    `relative px-3 py-1.5 text-xs font-semibold tracking-wide transition-all duration-200 rounded-lg select-none ${
+                    `relative px-3.5 py-1.5 text-xs font-medium tracking-wide transition-all duration-200 rounded-full select-none ${
                       isActive
-                        ? 'text-[#B91F35] dark:text-[#F05263] bg-[#FCEBED] dark:bg-[#321D23]'
-                        : 'text-[#66656B] dark:text-[#B6B4BA] hover:text-[#171719] dark:hover:text-[#F6F5F3] hover:bg-[#F1EFED] dark:hover:bg-[#1D1D21]'
+                        ? 'text-[#78132B] dark:text-[#F05263] bg-[#FBECEF] dark:bg-[#321D23] font-semibold'
+                        : 'text-[#525059] dark:text-[#B6B4BA] hover:text-[#141416] dark:hover:text-[#F6F5F3] hover:bg-[#F4EFEA] dark:hover:bg-[#1D1D21]'
                     }`
                   }
                 >
@@ -109,9 +109,10 @@ export default function Navbar() {
                 size="sm"
                 iconRight={Sparkles}
               >
-                Join Community
+                Join HACKLANCE
               </Button>
             </div>
+
 
             {/* Mobile Menu & Theme Toggle Trigger */}
             <div className="flex items-center gap-2 xl:hidden">

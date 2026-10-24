@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star, GitFork, ArrowUpRight, Github, ExternalLink, Code2 } from 'lucide-react';
+import { Star, GitFork, ArrowUpRight, ExternalLink, Code2 } from 'lucide-react';
+import { Github } from '../common/Icons';
+
 import { useData } from '../../context/DataContext';
 import SectionHeading from '../common/SectionHeading';
 import Card from '../common/Card';

@@ -12,17 +12,18 @@ export default function Card({
   return (
     <div
       onClick={onClick}
-      className={`relative rounded-2xl border border-[#E9E5E4] dark:border-[#343238] transition-all duration-300 ${
+      className={`relative rounded-3xl border border-[#EAE5E2] dark:border-[#2A2830] transition-all duration-300 ${
         glass
           ? 'glass-panel'
-          : 'bg-[#FFFFFF] dark:bg-[#1D1D21]'
-      } ${
+          : 'bg-white dark:bg-[#19191D]'
+      } shadow-[0_2px_12px_rgba(0,0,0,0.03)] ${
         hoverEffect
-          ? 'hover:border-[#B91F35]/50 dark:hover:border-[#F05263]/50 hover:shadow-lg dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.4)]'
+          ? 'hover:border-[#78132B]/30 dark:hover:border-[#F05263]/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.4)]'
           : ''
       } ${onClick ? 'cursor-pointer' : ''} ${className}`}
       {...props}
     >
+
       {/* Corner Technical Ticks */}
       {showTicks && (
         <>

@@ -18,26 +18,27 @@ export default function Button({
   ...props
 }) {
   const baseClasses =
-    'inline-flex items-center justify-center font-medium transition-all duration-200 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none rounded-xl';
+    'inline-flex items-center justify-center font-medium transition-all duration-200 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none rounded-full';
 
   const sizeClasses = {
-    sm: 'text-xs px-3.5 py-1.5 gap-1.5 h-8 font-semibold',
-    md: 'text-sm px-4 py-2 gap-2 h-10',
-    lg: 'text-base px-6 py-3 gap-2.5 h-12 font-semibold',
+    sm: 'text-xs px-4 py-1.5 gap-1.5 h-8 font-medium',
+    md: 'text-sm px-5 py-2 gap-2 h-10 font-medium',
+    lg: 'text-sm sm:text-base px-7 py-3.5 gap-2.5 h-12 font-medium',
   };
 
   const variantClasses = {
     primary:
-      'bg-[#B91F35] dark:bg-[#F05263] text-white hover:bg-[#8F182B] dark:hover:bg-[#B91F35] shadow-sm hover:shadow focus-visible:ring-[#B91F35] dark:text-[#101012] font-semibold active:scale-[0.98]',
+      'bg-[#78132B] dark:bg-[#F05263] text-white hover:bg-[#600F22] dark:hover:bg-[#B91F35] shadow-[0_8px_20px_-4px_rgba(120,19,43,0.38)] hover:shadow-[0_12px_24px_-4px_rgba(120,19,43,0.48)] focus-visible:ring-[#78132B] dark:text-[#101012] active:scale-[0.98]',
     secondary:
-      'bg-[#FAF9F6] dark:bg-[#1D1D21] border border-[#E9E5E4] dark:border-[#343238] text-[#171719] dark:text-[#F6F5F3] hover:border-[#B91F35] dark:hover:border-[#F05263] hover:bg-[#F1EFED] dark:hover:bg-[#242429] focus-visible:ring-[#B91F35] active:scale-[0.98]',
+      'bg-white dark:bg-[#19191D] border border-[#EAE5E2] dark:border-[#343238] text-[#141416] dark:text-[#F6F5F3] hover:bg-[#FAF8F5] dark:hover:bg-[#222228] hover:border-[#78132B]/40 dark:hover:border-[#F05263]/40 shadow-[0_2px_8px_rgba(0,0,0,0.03)] focus-visible:ring-[#78132B] active:scale-[0.98]',
     outline:
-      'border border-[#B91F35] dark:border-[#F05263] text-[#B91F35] dark:text-[#F05263] bg-transparent hover:bg-[#B91F35]/10 dark:hover:bg-[#F05263]/10 focus-visible:ring-[#B91F35] active:scale-[0.98]',
+      'border border-[#78132B] dark:border-[#F05263] text-[#78132B] dark:text-[#F05263] bg-transparent hover:bg-[#78132B]/10 dark:hover:bg-[#F05263]/10 focus-visible:ring-[#78132B] active:scale-[0.98]',
     ghost:
-      'text-[#66656B] dark:text-[#B6B4BA] hover:text-[#171719] dark:hover:text-[#F6F5F3] hover:bg-[#F1EFED] dark:hover:bg-[#1D1D21] focus-visible:ring-[#B91F35]',
+      'text-[#525059] dark:text-[#B6B4BA] hover:text-[#141416] dark:hover:text-[#F6F5F3] hover:bg-[#F4EFEA] dark:hover:bg-[#1D1D21] focus-visible:ring-[#78132B]',
     danger:
       'bg-[#B42332] text-white hover:bg-[#8F182B] focus-visible:ring-[#B42332] active:scale-[0.98]',
   };
+
 
   const combinedClasses = `${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`;
 
