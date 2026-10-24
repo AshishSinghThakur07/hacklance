@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: https://hacklance.rrgi.ac.in/sitemap.xml
